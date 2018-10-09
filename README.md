@@ -8,7 +8,7 @@ You can try the demo search engine using the web or the CLI client.
 
 #### Clone the project
 ```sh
-git clone https://github.com/joshjo/mini-google.git
+git clone https://github.com/wild10/miniGoogle.git
 ```
 
 #### Copy and extract the wikicorpus
@@ -83,4 +83,4 @@ g++ main.cpp -o engine
 #### Run the project
 ```sh
 ./engine
-```# mini-google
+```# miniGoogle
