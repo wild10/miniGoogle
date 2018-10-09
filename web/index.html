@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mini google ucsp</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="minigoogle">
+    </div>
+    <br>
+    <div class="minigoogle">
+       <img src="img/altavista.png" class="center"alt="Smiley face" width="272" height="92">
+       <br>
+       <!-- autocompletado en div y un text field -->
+       <div id="autocompleteDiv" class="autocomplete center " style="width:40%;">
+         <input id="myInput" type="text" name="myCountry" placeholder="Search" onkeydown="querySearchKey(event)" >
+       </div>
+       <br>
+       <br>
+       <button type="button" onclick="querySearch()" aria-label="Google Search" class="center button" name="btnK" type="submit"> Search</button>
+    </div>
+
+    <!--
+    <div class="minigoogle">
+  		<p>Inspired by <a href="github/minigoogle" target="_blank"> minigoogle</a>.</p>
+  	</div>-->
+  <script type="text/javascript" src="js/controllerIndex.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Altavista</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <div class="PostSearch">
+            <div class="PostImg">
+                <a href="index.html"><img src="img/altavista.png" class="logo-main" alt="Altavista" ></a>
+            </div>
+            <div class="PostForm">
+                <!--form method="GET" onSubmit="handlePosts()" action="/getPosts" class="PostForm"-->
+                    <!-- <input type="text"   id="search" class="box-input" name="search" placeholder="Search"> -->
+                    <div id="autocompleteDiv" class="autocomplete PostForm" >
+                        <input id="search" class="box-input" name="search" placeholder="Search" onkeydown="querySearchKey(event)">
+                    </div>
+
+                    <input type="button" onclick="handlePosts()" class="btn btn--search" value="Search"/>
+                    <!--input type="button" onclick="handleClick()"  class="btn btn--search "value="Search"/-->
+                <!--/form-->
+            </div>
+        </div>
+        <div>
+        <hr style="color:#f1f1f1" >
+        </div>
+
+        <div class="resultStatistic">
+          <span id="count" class="countStat">
+            0
+          </span> resultados en
+          <span id="time" class="timeStat">
+            0.00000001
+          </span>
+            sg.
+        </div>
+        <div id="wrapperSug" class="lev">
+            Quizás quisiste decir: <div id="suggestionRad"></div>
+        </div>         
+        
+        <div id="result" class="resultContent">
+
+        </div>
+        <!-- JavaScript -->
+        <script src="js/controllerMain.js"></script>
+        <!--script src="js/controllerIndex.js"></script-->
+    </body>
+    <footer style="padding: 20 10% 20 10%">
+        <button id="prevButton" onclick="prevPage()">Prev</button>
+        <button id="nextButton" onclick="nextPage()">Next</button>
+    </footer>
+</html>
